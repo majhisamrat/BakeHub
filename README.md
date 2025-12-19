@@ -31,6 +31,9 @@ This project was built as a part of my Web Technology Lab project using HTML, CS
 * Create table customer and order (SQL query has been provided in text file)
 * **Run the project:** Open XAMPP control panel and start start Apache, click on admin to go to your directory, and open Login.html
 
+## 🎥 Video Demo
+https://youtu.be/gjAhZEqMw_w?si=hYgoE2liCzBsayE2
+
 ## 📸 Screenhots
 **Signin Page**
 
