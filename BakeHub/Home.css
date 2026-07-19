@@ -1,6 +1,10 @@
-/*Global Styles*/
-body{
+html, body {
+    width: 100%;
+    overflow-x: hidden;
     margin: 0;
+    padding: 0;
+}
+body {
     font-family: Arial, sans-serif;
     background-color: #fdfdfb;
 }
@@ -1215,7 +1219,7 @@ footer {
     }
 
     /* Categories Section */
-    .categories-list {
+    .categories {
         display: flex;
         overflow-x: auto;
         gap: 20px;
@@ -1225,7 +1229,7 @@ footer {
         -webkit-overflow-scrolling: touch;
     }
     
-    .categories-list::-webkit-scrollbar {
+    .categories::-webkit-scrollbar {
         display: none;
     }
     
@@ -1234,7 +1238,7 @@ footer {
     }
 
     /* Products Grid */
-    .products-grid {
+    .product-grid {
         grid-template-columns: 1fr; /* 1 column on very small mobile */
         padding: 0 4%;
         gap: 24px;
@@ -1278,7 +1282,7 @@ footer {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .products-grid {
+    .product-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet sizes */
     }
 }
