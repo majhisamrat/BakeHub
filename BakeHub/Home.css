@@ -1163,4 +1163,125 @@ footer {
     animation: badgeBounce 0.3s ease-out;
 }
 
+/* ==================================================
+   📱 Mobile Responsiveness CSS Styles
+   ================================================== */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 4%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        gap: 16px; /* Reduced gap from 100px to 16px */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    header nav a {
+        font-size: 15px;
+    }
+    
+    .my-account-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 4%;
+        gap: 20px;
+    }
+    
+    .hero-logo-container .logo {
+        font-size: 48px; /* Reduced from 100px */
+    }
+    
+    .hero-content p {
+        font-size: 18px; /* Reduced from 24px */
+        margin-top: 10px;
+    }
+    
+    .hero img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    /* Categories Section */
+    .categories-list {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 10px 4% 20px 4%;
+        justify-content: flex-start;
+        scrollbar-width: none; /* Hide scrollbar for clean UI */
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .categories-list::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .category-item {
+        flex: 0 0 auto; /* Stop shrinking in scroll container */
+    }
+
+    /* Products Grid */
+    .products-grid {
+        grid-template-columns: 1fr; /* 1 column on very small mobile */
+        padding: 0 4%;
+        gap: 24px;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-logo .logo {
+        padding: 10px 0;
+        font-size: 36px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        gap: 24px;
+    }
+    
+    /* Checkout Modal */
+    .checkout-modal {
+        width: 95%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .checkout-steps {
+        padding: 10px 14px;
+    }
+    
+    .step-indicator {
+        gap: 4px;
+    }
+    
+    .step-label {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet sizes */
+    }
+}
+
+
 
