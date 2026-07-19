@@ -24,13 +24,7 @@ This project was built as a part of my Web Technology Lab project using HTML, CS
 * **Server Environment:** XAMPP
 
 ## 📸 Screenhots
-**Signin Page**
 
-<img src="Images/Signup Page.jpeg">
-
-**Login Page**
-
-<img src="Images/Login Page.jpeg">
 
 **Home Page**
 
