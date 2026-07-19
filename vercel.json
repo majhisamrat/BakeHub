@@ -12,6 +12,10 @@
   ],
   "routes": [
     {
+      "src": "/",
+      "dest": "/_Home.html"
+    },
+    {
       "src": "/(verify-otp-mock|verify-otp-firebase|get_orders.php|place_order.php|get_user_data.php|profile_actions.php|api/config)",
       "dest": "server.js"
     },
