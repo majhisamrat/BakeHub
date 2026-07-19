@@ -23,17 +23,6 @@ This project was built as a part of my Web Technology Lab project using HTML, CS
 * **Database:** MySQL
 * **Server Environment:** XAMPP
 
-## ⚙️ Installation and Setup
-* Make sure XAMPP is installed in your systems
-* **Clone the repository:** Download the project inside htdocs folder which you will find inside xampp folder C:\xampp\htdocs\
-* **Database Configuration:** Start MySQL in XAMPP control panel and open phpMyAdmin (http://localhost/phpmyadmin) in your web browser
-* Create a new database named bakehub
-* Create table customer and order (SQL query has been provided in text file)
-* **Run the project:** Open XAMPP control panel and start start Apache, click on admin to go to your directory, and open Login.html
-
-## 🎥 Video Demo
-https://youtu.be/gjAhZEqMw_w?si=hYgoE2liCzBsayE2
-
 ## 📸 Screenhots
 **Signin Page**
 
