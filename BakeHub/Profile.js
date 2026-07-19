@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const form = document.getElementById('profile-form');
-    const inputs = form.querySelectorAll('input:not(#email), select'); 
+    const inputs = form.querySelectorAll('input:not(#phone), select'); 
     const editBtn = document.getElementById('edit-btn');
     const editActions = document.getElementById('edit-actions');
     const cancelBtn = document.getElementById('cancel-btn');
@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 displayName.textContent = user.name;
             } else {
-                //If not logged in or error, go to Login
-                window.location.href = 'Login.html';
+                //If not logged in or error, go to Home
+                window.location.href = '_Home.html';
             }
         });
 
@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const data = {
             name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
             phone: document.getElementById('phone').value,
             gender: document.getElementById('gender').value,
             birthday: document.getElementById('birthday').value
@@ -69,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('logout-btn').addEventListener('click', () => {
         fetch('profile_actions.php?action=logout')
         .then(() => {
-            window.location.href = 'Login.html';
+            window.location.href = '_Home.html';
         });
     });
 
@@ -81,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => {
                 if(response.success){
                     alert('Account deleted.');
-                    window.location.href = 'Register.html';
+                    window.location.href = '_Home.html';
                 } else {
                     alert('Could not delete account.');
                 }

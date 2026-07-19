@@ -2,10 +2,10 @@ MySQL
 Customer Table
 CREATE TABLE customer (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    phone VARCHAR(20) DEFAULT NULL,
+    name VARCHAR(255) DEFAULT NULL,
+    email VARCHAR(255) DEFAULT NULL,
+    password VARCHAR(255) DEFAULT NULL,
+    phone VARCHAR(20) NOT NULL UNIQUE,
     gender VARCHAR(20) DEFAULT NULL,
     birthday DATE DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -17,5 +17,7 @@ CREATE TABLE orders (
     customer_id INT NOT NULL,
     items TEXT NOT NULL,
     total_amount DECIMAL(10,2) NOT NULL,
-    order_date DATETIME DEFAULT CURRENT_TIMESTAMP
+    order_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    delivery_date DATE DEFAULT NULL,
+    payment_mode VARCHAR(20) DEFAULT 'COD'
 );

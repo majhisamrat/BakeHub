@@ -1,0 +1,106 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Samrat Majhi",
+      "email": "samratmajhi62@gmail.com",
+      "password": "@Samrat",
+      "phone": null,
+      "gender": null,
+      "birthday": null,
+      "created_at": "2026-07-19 15:17:43"
+    },
+    {
+      "id": 2,
+      "name": "Samrat Majhi",
+      "email": "samratmajhi62@gmail.com",
+      "password": "",
+      "phone": "+916291324785",
+      "gender": "Male",
+      "birthday": "",
+      "created_at": "2026-07-19 15:46:25"
+    },
+    {
+      "id": 3,
+      "name": "User +919876543210",
+      "email": "",
+      "password": "",
+      "phone": "+919876543210",
+      "gender": "",
+      "birthday": "",
+      "created_at": "2026-07-19 15:48:44"
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "0001",
+      "customer_id": 2,
+      "items": "Lemon Cake",
+      "total_amount": "150.00",
+      "order_date": "2026-07-19 15:51:46"
+    },
+    {
+      "order_id": "0002",
+      "customer_id": 2,
+      "items": "Classic Choco Chip Cookie, Strawberry Glazed Donut, Black Forest Cake",
+      "total_amount": "610.00",
+      "order_date": "2026-07-19 17:45:53"
+    },
+    {
+      "order_id": "0003",
+      "customer_id": 2,
+      "items": "Double Chocolate Chunk Cookie, Red Velvet Cookie",
+      "total_amount": "330.00",
+      "order_date": "2026-07-19 17:48:53"
+    },
+    {
+      "order_id": "0004",
+      "customer_id": 2,
+      "items": "Classic Choco Chip Cookie, Strawberry Glazed Donut",
+      "total_amount": "310.00",
+      "order_date": "2026-07-19 18:04:13"
+    },
+    {
+      "order_id": "0005",
+      "customer_id": 2,
+      "items": "Double Chocolate Chunk Cookie, Red Velvet Cookie",
+      "total_amount": "330.00",
+      "order_date": "2026-07-19 18:07:26",
+      "delivery_date": "2026-07-25"
+    },
+    {
+      "order_id": "0006",
+      "customer_id": 2,
+      "items": "Classic Choco Chip Cookie, Strawberry Glazed Donut",
+      "total_amount": "310.00",
+      "order_date": "2026-07-19 18:13:55",
+      "delivery_date": "2026-07-24"
+    },
+    {
+      "order_id": "0007",
+      "customer_id": 2,
+      "items": "Classic Choco Chip Cookie (x4)",
+      "total_amount": "600.00",
+      "order_date": "2026-07-19 18:26:01",
+      "delivery_date": "2026-07-20"
+    },
+    {
+      "order_id": "0008",
+      "customer_id": 2,
+      "items": "Classic Choco Chip Cookie (x1)",
+      "total_amount": "150.00",
+      "order_date": "2026-07-19 18:30:04",
+      "delivery_date": "2026-07-21",
+      "payment_mode": "cod"
+    },
+    {
+      "order_id": "0009",
+      "customer_id": 2,
+      "items": "Classic Choco Chip Cookie (x1)",
+      "total_amount": "150.00",
+      "order_date": "2026-07-19 18:30:32",
+      "delivery_date": "2026-07-19",
+      "payment_mode": "upi"
+    }
+  ]
+}
