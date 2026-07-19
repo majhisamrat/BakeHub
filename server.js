@@ -313,9 +313,13 @@ app.all('/profile_actions.php', authenticateToken, (req, res) => {
 });
 
 // Start Server
-app.listen(PORT, () => {
-    console.log(`==================================================`);
-    console.log(`🎂 BakeHub Localhost Server running successfully!`);
-    console.log(`👉 Access website at: http://localhost:${PORT}`);
-    console.log(`==================================================`);
-});
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`==================================================`);
+        console.log(`🎂 BakeHub Localhost Server running successfully!`);
+        console.log(`👉 Access website at: http://localhost:${PORT}`);
+        console.log(`==================================================`);
+    });
+}
+
+module.exports = app;
