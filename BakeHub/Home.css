@@ -1279,6 +1279,21 @@ footer {
     .step-label {
         font-size: 9px;
     }
+
+    /* Cart Sidebar Mobile Adjustments */
+    .cart-sidebar {
+        width: 100%;
+        right: -100%;
+    }
+    
+    .cart-sidebar.active {
+        right: 0;
+    }
+
+    .cart-header #close-cart {
+        font-size: 24px;
+        padding: 5px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
