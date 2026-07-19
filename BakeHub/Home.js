@@ -228,6 +228,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (cartSidebar) {
+        cartSidebar.addEventListener('click', (e) => {
+            if (e.target === cartSidebar) {
+                cartSidebar.classList.remove('active');
+            }
+        });
+    }
+
     // Add to cart buttons
     addToCartButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -381,6 +389,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeCheckoutBtn) {
         closeCheckoutBtn.addEventListener('click', () => {
             checkoutModal.classList.remove('show');
+        });
+    }
+
+    if (checkoutModal) {
+        checkoutModal.addEventListener('click', (e) => {
+            if (e.target === checkoutModal) {
+                checkoutModal.classList.remove('show');
+            }
         });
     }
 
