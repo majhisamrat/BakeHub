@@ -1308,8 +1308,13 @@ footer {
     }
 }
 
-
-
+/* Cart Modal mobile device adjustments */
+@media screen and (max-device-width: 768px) {
+    .cart-modal-content {
+        max-width: 900px !important; /* Increase width on mobile viewport scale */
+        max-height: 85vh !important;
+    }
+}
 
 
 

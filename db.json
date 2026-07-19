@@ -101,6 +101,15 @@
       "order_date": "2026-07-19 18:30:32",
       "delivery_date": "2026-07-19",
       "payment_mode": "upi"
+    },
+    {
+      "order_id": "0010",
+      "customer_id": 2,
+      "items": "Classic Choco Chip Cookie (x2), Strawberry Glazed Donut (x2)",
+      "total_amount": "620.00",
+      "order_date": "2026-07-19 20:36:50",
+      "delivery_date": "2026-07-23",
+      "payment_mode": "cod"
     }
   ]
 }
