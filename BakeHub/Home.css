@@ -1279,26 +1279,28 @@ footer {
     .step-label {
         font-size: 9px;
     }
-
-    /* Cart Sidebar Mobile Adjustments */
-    .cart-sidebar {
-        width: 100%;
-        right: -100%;
-    }
-    
-    .cart-sidebar.active {
-        right: 0;
-    }
-
-    .cart-header #close-cart {
-        font-size: 24px;
-        padding: 5px;
-    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet sizes */
+    }
+}
+
+/* Cart Sidebar mobile device override (with viewport width=1200) */
+@media screen and (max-device-width: 768px) {
+    .cart-sidebar {
+        width: 100% !important;
+        right: -100% !important;
+    }
+    
+    .cart-sidebar.active {
+        right: 0 !important;
+    }
+
+    .cart-header #close-cart {
+        font-size: 32px !important; /* Larger for better touch target */
+        padding: 10px !important;
     }
 }
 
